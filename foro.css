@@ -91,7 +91,7 @@ h1, h2 {
 }
 
 /* Sección de publicaciones */
-#posts {
+.posts {
     background-color: #0f0f20;/* Fondo oscuro para la sección de publicaciones */
     color: #fff;
     padding: 20px;
@@ -127,7 +127,7 @@ input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     background-color: #0f0f20; /* Fondo oscuro para los campos de texto */
-    color: #fff; /* Color del texto */
+    color: #f72585; /* Color del texto */
     margin-bottom: 20px;
     border: 1px solid white;
     border-radius: 10px;
