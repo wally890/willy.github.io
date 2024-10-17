@@ -92,7 +92,8 @@ h1, h2 {
 
 /* Sección de publicaciones */
 #posts {
-    background-color: #0f0f20; /* Fondo oscuro para la sección de publicaciones */
+    background-color: #0f0f20;/* Fondo oscuro para la sección de publicaciones */
+    color:white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
