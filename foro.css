@@ -4,6 +4,74 @@ body {
     color: #f72585; /* Color de texto rosado */
     font-family: Poppins, sans-serif; /* Tipografía moderna */
 }
+/* menu */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.menu-container {
+    width: 100%;
+    background-color: #0f0f20;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: #f72585;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #080813;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0f0f20;
+    min-width: 160px;
+    top: 50px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f72585;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* Estilos del contenedor del foro */
 .forum-container {
