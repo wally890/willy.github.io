@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Visitante</title>
+    <link rel="stylesheet" href="visitante.css">
+</head>
+<body>
+
+
+    <div class="menu-container">
+        <nav>
+            <ul class="menu">
+                <li><a href="prueba.html">Inicio</a></li>
+                
+                <li class="dropdown">
+                    <a href="#formularios" class="dropbtn">Formularios</a>
+                    <ul class="dropdown-content">
+                        <li><a href=alumno.html>Alumno</a></li>
+                        <li><a href= "visitaopinion.html">Visita Opinión</a></li>
+                        <li><a href="index.html">Visitante</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="form-container">
+        <h2>Registro de Visitante</h2>
+        <hr>
+        <form action="foro.html" method="get">
+            <!-- Nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+            <!-- Apellido -->
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+<div class="Boton">
+            <!-- Botón de envío -->
+            <button type="submit" class="Boton">Registrar</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
