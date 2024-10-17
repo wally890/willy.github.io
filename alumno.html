@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="alumno.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <div class="menu-container">
+        <nav>
+            <ul class="menu">
+                <li><a href="prueba.html">Inicio</a></li>
+                
+                <li class="dropdown">
+                    <a href="#formularios" class="dropbtn">Formularios</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#alumno">Alumno</a></li>
+                        <li><a href="visitaopinion.html">Visita Opinión</a></li>
+                        <li><a href="index.html">Visitante</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+<!-- Sub menú -->
+
+<!-- <div class="menu-toggle" id="menuToggle">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+<nav class="menu" id="menu">
+    <ul>
+        <li><a href="prueba.html">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav> -->
+
+<!-- php -->
+
+<!-- <?php
+    if (isset($_POST['aceptar']))
+    { 
+        $aceptar = $_POST['aceptar'];
+        $nombre = $_POST['nombre-g'];
+        $curso = $_POST['curso-g'];
+        $aula = $_POST['aula-g'];
+        $tema = $_POST['tema-exp'];
+        $extra =$_POST['obser'];
+
+        print ("<form method='POST' action='formulario-proyecto.php' class='formulario'>
+
+        <h1>Ingreso de datos</h1>
+        
+        <label> Son Correctos los datos ingresados: </label>
+
+        <ul>
+         <li> Nombre: " . $nombre . "</li> 
+         <br>
+         <li> Curso: " . $curso . "</li>
+         <br>
+         <li> Aula: " . $aula . "</li> 
+         <br>
+         <li> Tema: " . $tema . "</li> 
+         <br>
+         <li> Extras: " . $extra . "</li> 
+        </ul>
+    
+        <input class='aceptar-boton' type='submit'  name='aceptar2' value='Aceptar'>
+        <input class='aceptar-boton' type='submit' href='formulario-proyecto' value='Volver'>
+        
+        </form>");
+
+    } else {
+
+?>
+    -->
+<!-- Formulario -->
+
+<form method="POST" action="formulario-proyecto.php" class="formulario">
+
+<h1>Ingreso de datos</h1>
+<hr>
+<input required class="input-form" type="text" name="nombre-g" placeholder="Nombre proyecto">
+
+<br>
+
+<input required class="input-form" type="text" name="curso-g" placeholder="Descripcion de proyecto">
+
+<br>
+
+<input required class="input-form" type="text" name="aula-g" placeholder="Integrantes">
+
+<br>
+
+<input required class="input-form" type="text" name="tema-exp" placeholder="El stand">
+
+<br>
+
+<textarea class="input-form" name="obser" placeholder="Extras" cols="22" rows="5"></textarea>
+
+<br>
+
+<input class="aceptar-boton" type="submit" name="aceptar" value="Aceptar">
+
+</form>
+<!--
+<?php
+    } 
+?>
+-->
+</body>
+</html>

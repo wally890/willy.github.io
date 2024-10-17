@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estético</title>
+    <link rel="stylesheet" href="visitaop.css">
+</head>
+<body>
+    <div class="menu-container">
+        <nav>
+            <ul class="menu">
+                <li><a href="prueba.html">Inicio</a></li>
+                
+                <li class="dropdown">
+                    <a href="#formularios" class="dropbtn">Formularios</a>
+                    <ul class="dropdown-content">
+                        <li><a href=alumno.html>Alumno</a></li>
+                        <li><a href="visitaopinion.html">Visita Opinión</a></li>
+                        <li><a href="index.html">Visitante</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <div class="form-container">
+        <h2>Evaluación del Stand</h2>
+        <hr>
+        <form action="#" method="post">
+            <!-- Comentario -->
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario aquí..." required></textarea>
+
+            <!-- Valoración del Stand -->
+            <label for="valoracion">Valoración del Stand:</label>
+            <select id="valoracion" name="valoracion" required>
+                <option value="" disabled selected>Selecciona una valoración</option>
+                <option value="excelente">Excelente</option>
+                <option value="bueno">Bueno</option>
+                <option value="regular">Regular</option>
+                <option value="malo">Malo</option>
+            </select>
+
+            <!-- Fecha y hora -->
+            <div class="fecha-hora">
+                <label for="fecha">Fecha de la visita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de la visita:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit">Enviar Evaluación</button>
+        </form>
+    </div>
+</body>
+</html>

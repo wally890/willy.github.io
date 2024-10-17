@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro Básico con Usuarios</title>
+    <link rel="stylesheet" href="foro.css">
+</head>
+<body>
+    <div class="forum-container">
+        <h1>Foro de Discusión</h1>
+        
+        <div class="post-section">
+            <h2>Publicaciones:</h2>
+            <div id="posts">
+                <!-- Aquí se agregarán las publicaciones -->
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Agregar un comentario</h2>
+            <form id="commentForm">
+                <input type="text" id="username" placeholder="Tu nombre" required>
+                <textarea id="commentText" placeholder="Escribe tu comentario..." required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Extraer el nombre y apellido de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const nombre = urlParams.get('nombre');
+        const apellido = urlParams.get('apellido');
+        
+        if (nombre && apellido) {
+            // Combinar el nombre y apellido
+            const usuarioCompleto = `${nombre} ${apellido}`;
+            document.getElementById('username').value = usuarioCompleto;
+        }
+
+        const form = document.getElementById('commentForm');
+        const posts = document.getElementById('posts');
+        const usernameInput = document.getElementById('username');
+        const commentText = document.getElementById('commentText');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = usernameInput.value.trim();
+            const comment = commentText.value.trim();
+
+            if (username && comment) {
+                const postDiv = document.createElement('div');
+                postDiv.className = 'post';
+                
+                // Crear un elemento con el nombre de usuario
+                const userNameElem = document.createElement('strong');
+                userNameElem.textContent = username + ": ";
+                
+                // Crear un elemento con el comentario
+                const commentElem = document.createElement('span');
+                commentElem.textContent = comment;
+
+                // Añadir el nombre de usuario y el comentario al div del post
+                postDiv.appendChild(userNameElem);
+                postDiv.appendChild(commentElem);
+                
+                // Añadir el post a la sección de publicaciones
+                posts.appendChild(postDiv);
+                
+                // Limpiar los campos del formulario
+                commentText.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
