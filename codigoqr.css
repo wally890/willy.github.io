@@ -1,0 +1,35 @@
+.inicio {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f0f20;
+    padding: 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    }
+
+.cuerpo {
+        display: flex;
+        max-width: 750px;
+        background-color: #080813;
+        border-radius: 8px;
+        overflow: hidden;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+    
+.imagen img {
+    
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    }
